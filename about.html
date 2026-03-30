@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="Furniture in Buchhireddypalem, Divan Cot, Wooden Bed, Sofa, Furniture Shop Near Me">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="author" content="Ashmitha Enterprises">
+
+<meta name="robots" content="index, follow"><title>Best Furniture Shop in Buchhireddypalem | Ashmitha Enterprises</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="icon" href="images/favicon.png">
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+}
+
+/* 🔥 NAVBAR (UPDATED) */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  transition: 0.3s;
+  padding: 2px 0; /* 🔥 reduced height */
+}
+
+/* TEXT */
+.navbar a {
+  color: #fff !important;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* BRAND */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: -50px;  /* adjust as needed */
+}
+
+/* 🔥 LOGO (NO SIZE CHANGE) */
+.logo-img {
+  height: 145px;
+  object-fit: contain;
+  transition: 0.3s;
+  transform: translateY(-10px); /* 🔥 move up */
+}
+
+/* 🔥 MOVE LINKS UP */
+.navbar-nav {
+  transform: translateY(-8px);
+}
+
+/* SCROLL EFFECT */
+.navbar.scrolled {
+  background: #111111;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  padding: 0;
+  min-height: 65px;
+}
+
+/* KEEP SAME LOGO SIZE ON SCROLL */
+.navbar.scrolled .logo-img {
+  height: 145px;
+}
+/* 🔥 HERO */
+.hero-new {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh; /* 🔥 full real screen height (mobile + desktop) */
+
+  background: url('https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=880&auto=format&fit=crop') no-repeat center/cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  overflow: hidden;
+
+  padding-top: 80px; /* 🔥 prevents navbar overlap */
+}
+/* DARK OVERLAY */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+  top: 0;
+  left: 0;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero-content .offer {
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.hero-content p {
+  color: #ffff;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.btn-shop-now {
+  background: #c9a96e;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-shop-now:hover {
+  background: #b8965f;
+}
+
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero-content h1 {
+    font-size: 45px;
+  }
+}
+/* MAKE WHOLE CARD CLICKABLE */
+.gallery-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* CLICK EFFECT */
+.gallery-link:hover {
+  color: inherit;
+}
+
+/* ADD SMOOTH HOVER */
+.gallery-item {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-6px);
+}
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  font-size: 26px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+  transform: scale(1.1);
+}
+/* ================= CONTACT ================= */
+/* ===== PREMIUM CONTACT ===== */
+.contact-premium {
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+
+/* IMAGE SIDE */
+.contact-image {
+  height: 100%;
+  min-height: 500px;
+  background: url('https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+  border-radius: 20px 0 0 20px;
+}
+
+/* CONTENT */
+.contact-content {
+  background: #fff;
+  padding: 50px;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.contact-content h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* INPUTS */
+.custom-input {
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.custom-input:focus {
+  border-color: #c9a96e;
+  box-shadow: 0 0 0 2px rgba(201,169,110,0.2);
+}
+
+/* BUTTON */
+.contact-btn-premium {
+  background: #c9a96e;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  transition: 0.3s;
+}
+
+.contact-btn-premium:hover {
+  background: #b8965f;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .contact-content {
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .contact-premium {
+    padding: 60px 0;
+  }
+}
+
+/* ================= FOOTER ================= */
+.footer-advanced {
+  background: linear-gradient(to right, #0f1714, #1c2c25);
+  color: #ccc;
+  padding: 70px 0 30px;
+}
+
+.footer-logo {
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer-advanced h6 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-advanced ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-advanced ul li {
+  margin-bottom: 8px;
+}
+
+.footer-advanced ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-advanced ul li a:hover {
+  color: #c9a96e;
+  padding-left: 5px;
+}
+/* FOOTER BRAND WITH LOGO */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* LOGO IMAGE */
+.footer-logo-img {
+  height: 150px;
+  object-fit: contain;
+}
+
+/* TEXT */
+.footer-brand h4 {
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* MOBILE FIX */
+@media(max-width:768px){
+  .footer-brand {
+    justify-content: center;
+  }
+}
+/* SOCIAL */
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #c9a96e;
+}
+
+/* COPYRIGHT */
+.copy {
+  font-size: 14px;
+  color: #888;
+}
+/* ================= GLOBAL MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR FIX */
+  .navbar {
+    padding: 5px 0;
+  }
+
+  .navbar-brand {
+    margin-left: 0;
+  }
+
+  .logo-img {
+    height: 90px;
+    transform: none;
+  }
+
+  .navbar-nav {
+    transform: none;
+    text-align: center;
+    background: #111;
+    padding: 15px 0;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  /* HERO FIX */
+  .hero-new {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  /* TRUST SECTION */
+  .trust {
+    padding: 60px 0;
+  }
+
+  /* STATS */
+  .stat-item h1 {
+    font-size: 40px;
+  }
+
+  /* GALLERY */
+  .gallery-item img {
+    height: 180px;
+  }
+
+  /* CONTACT */
+  .contact-advanced {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  /* FOOTER */
+  .footer-advanced {
+    text-align: center;
+    padding: 50px 0 20px;
+  }
+
+  .footer-advanced .row > div {
+    margin-bottom: 25px;
+  }
+
+  .footer-brand {
+    justify-content: center;
+  }
+
+  .footer-logo-img {
+    height: 120px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+/* ================= FINAL MOBILE FIX (OVERRIDE) ================= */
+@media (max-width: 768px) {
+
+  /* FIX LOGO SIZE */
+  .logo-img {
+    height: 70px !important;
+    transform: none !important;
+  }
+
+  /* FIX NAVBAR */
+  .navbar {
+    padding: 5px 10px !important;
+  }
+
+  .navbar-nav {
+    transform: none !important;
+    background: #111;
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* FIX HERO */
+  .hero-new {
+    min-height: 100vh !important;
+    padding: 100px 15px 40px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 32px !important;
+  }
+
+  .hero-content h6 {
+    font-size: 14px !important;
+  }
+
+  .hero-content p {
+    font-size: 13px !important;
+  }
+
+  /* FIX STATS */
+  .stats-wrapper {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .stat-item h1 {
+    font-size: 38px !important;
+  }
+
+  .stat-divider {
+    width: 50px !important;
+    height: 1px !important;
+  }
+
+  /* FIX GALLERY */
+  .gallery-item img {
+    height: 150px !important;
+  }
+
+  /* FIX CONTACT */
+  .contact-image {
+    display: none !important;
+  }
+
+  .contact-content {
+    border-radius: 15px !important;
+    padding: 25px !important;
+  }
+
+  /* FIX FOOTER LOGO */
+  .footer-logo-img {
+    height: 90px !important;
+  }
+}
+
+/* GLOBAL IMAGE FIX */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ================= ABOUT ================= */
+.about-section {
+  padding: 80px 0;
+}
+
+.about-tag {
+  color: #c9a96e;
+  font-weight: 600;
+}
+
+.about-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #c9a96e;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* ================= WHATSAPP ================= */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px 15px;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+/* ================= FOOTER ================= */
+.footer-advanced {
+  background: linear-gradient(to right, #0f1714, #1c2c25);
+  color: #ccc;
+  padding: 70px 0 30px;
+}
+
+.footer-logo-img {
+  height: 120px;
+}
+
+.footer-advanced h6 {
+  color: #fff;
+}
+
+.footer-advanced ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-advanced ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+
+  .logo-img {
+    height: 80px;
+    transform: none;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-new {
+    min-height: 80vh;
+  }
+
+  .about-section {
+    text-align: center;
+  }
+
+  .footer-advanced {
+    text-align: center;
+  }
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FurnitureStore",
+  "name": "Ashmitha Enterprises",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Buchhireddypalem",
+    "addressRegion": "Andhra Pradesh",
+    "addressCountry": "India"
+  },
+  "telephone": "+919876543210"
+}
+</script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+  <img src="images/logo1.png" alt="Ashmitha Enterprises" class="logo-img">
+</a>
+
+    <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
+      ☰
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="Gallery.html">GALLERY</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-new">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <span class="offer">PREMIUM FURNITURE COLLECTION</span>
+    <h6>Trusted Furniture Shop in Buchireddypalem</h6>
+    <h1>Elegant Furniture for Modern Living</h1>
+    <p>
+      Discover high-quality sofas, wooden beds, and custom furniture designed for comfort,
+      durability, and style. At Ashmitha Enterprises, we bring craftsmanship and
+      affordability together to transform your home into a space you love.
+    </p>
+
+    <a href="Gallery.html" class="btn btn-shop-now">Explore More</a>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" class="img-fluid">
+      </div>
+
+      <div class="col-md-6">
+        <span class="about-tag">ABOUT US</span>
+        <h2>Crafting Comfort & Style</h2>
+
+        <p>
+          Ashmitha Enterprises offers premium furniture including divan cots,
+          sofas, and wooden beds designed with durability and elegance.
+        </p>
+
+        <div class="row">
+          <div class="col-6">✔ Premium Materials</div>
+          <div class="col-6">✔ Modern Designs</div>
+          <div class="col-6">✔ Affordable Pricing</div>
+          <div class="col-6">✔ Trusted Service</div>
+        </div>
+
+        <a href="about.html" class="about-btn">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- FOOTER -->
+<footer class="footer-advanced">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <img src="images/logo1.png" class="footer-logo-img">
+      </div>
+
+      <div class="col-md-2">
+        <h6>Links</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6>Services</h6>
+        <ul>
+          <li>Custom Furniture</li>
+          <li>Interior Setup</li>
+          <li>Home Delivery</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6>Contact</h6>
+        <p>Nellore</p>
+        <p>+91 9876543210</p>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+    <p class="text-center">© 2026 Ashmitha Enterprises</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- 🔥 SCROLL SCRIPT -->
+<script>
+window.addEventListener("scroll", function() {
+  const navbar = document.querySelector(".navbar");
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+
+</script>
+
+</body>
+</html>
