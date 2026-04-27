@@ -776,7 +776,7 @@ img {
         <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
         <li class="nav-item"><a class="nav-link" href="Gallery.html">GALLERY</a></li>
-        <li class="nav-item"><a class="nav-link" href="Contact.html">CONTACT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
       </ul>
     </div>
   </div>
@@ -816,27 +816,23 @@ img {
             Have questions or need help? Fill out the form and we’ll get back to you.
           </p>
 
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Your Name" required>
-            </div>
+          <form id="whatsappForm">
+  <div class="mb-3">
+    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+  </div>
 
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Your Email" required>
-            </div>
+  <div class="mb-3">
+    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+  </div>
 
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Subject">
-            </div>
+  <div class="mb-3">
+    <input type="text" id="product" class="form-control" placeholder="Enter Product Name" required>
+  </div>
 
-            <div class="mb-3">
-              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-shop-now w-100">
-              Send Message
-            </button>
-          </form>
+  <button type="submit" class="btn btn-shop-now w-100">
+    Send via WhatsApp
+  </button>
+</form>
 
         </div>
       </div>
@@ -892,7 +888,7 @@ img {
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
       </div>
@@ -941,7 +937,25 @@ window.addEventListener("scroll", function() {
   }
 });
 
+document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+  e.preventDefault();
 
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let product = document.getElementById("product").value;
+
+  let phoneNumber = "918555811048"; // no +, no spaces
+
+  let text = `Hello Ashmitha Enterprises,
+
+Name: ${name}
+Email: ${email}
+Product Interested: ${product}`;
+
+  let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+
+  window.open(url, "_blank");
+});
 </script>
 
 </body>
